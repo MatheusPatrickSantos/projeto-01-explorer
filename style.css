@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --titulo: 'Open Sans', sans-serif;
+    --descricao: 'Inter', sans-serif;
+
+    --cor-de-destaque: #8257E5;
+    --cor-de-descricao: #E1E1E6;
+}
+
+body {
+    background: #121214;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 592px;
+    margin: 0 auto;
+}
+
+.container header img {
+    width: 30vw;
+    height: 40vh;
+    margin-bottom: 72px;
+}
+
+.container main h1 {
+    font-family: var(--titulo);
+    font-weight: normal;
+    font-size: 49px;
+    color:  var(--cor-de-descricao);
+
+
+    width: 562px;
+    margin-bottom: 32px;
+}
+
+.container main p {
+    color: var(--cor-de-descricao);
+
+    font-family: var(--descricao);
+    font-size: 14px;
+}
+
+span, a {
+    color: var(--cor-de-destaque);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+    margin: 72px auto 0px;
+    width: 592px;
+
+    border-top: 1px solid #ECEFF2;
+    line-height: 28px;
+}
+
+footer a {
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+footer a + a {
+    margin-left: 28px;
+}
+
+#bolinha {
+    position: fixed;
+
+    color: var(--cor-de-destaque);
+    bottom: 0;
+    right: 0;
+}
